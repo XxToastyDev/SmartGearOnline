@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="e8afa5c2-1a2e-485e-994b-b471cc7a2ff5" name="devin@DEVASUS 2025-12-07 13:42:19" runUser="DEVASUS\devin" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-12-07T13:42:19.8123981+02:00" queuing="2025-12-07T13:42:19.8123985+02:00" start="2025-12-07T13:42:18.1059390+02:00" finish="2025-12-07T13:42:19.8645390+02:00" />
+  <TestSettings name="default" id="eee7a2d9-7808-4a80-823b-3e8ac3afd0db">
+    <Deployment runDeploymentRoot="devin_DEVASUS_2025-12-07_13_42_19" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="17753e84-1240-45f4-a620-5a8bab527705" testId="fc2c1923-9d7d-4130-7d8e-975afe28d2ca" testName="SmartGearOnline.Tests.ProductControllerTests.Edit_Post_UpdateFails_ReturnsNotFound" computerName="DEVASUS" duration="00:00:00.0018038" startTime="2025-12-07T13:42:19.7771452+02:00" endTime="2025-12-07T13:42:19.7771453+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="17753e84-1240-45f4-a620-5a8bab527705" />
+    <UnitTestResult executionId="5bf9b25a-25ad-48ad-bdae-4d331628f4d2" testId="44c4de37-6414-ae7d-af95-ac09c727c062" testName="SmartGearOnline.Tests.ProductControllerTests.Details_ProductExists_ReturnsView" computerName="DEVASUS" duration="00:00:00.0008431" startTime="2025-12-07T13:42:19.7430848+02:00" endTime="2025-12-07T13:42:19.7430849+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5bf9b25a-25ad-48ad-bdae-4d331628f4d2" />
+    <UnitTestResult executionId="9e0537c3-5d34-49ed-a412-0fb4ae9a0f52" testId="cf6f4da1-be0a-447f-9674-2307d3e546e6" testName="SmartGearOnline.Tests.ProductControllerTests.Create_Post_ValidProduct_RedirectsToIndex_AndLogs" computerName="DEVASUS" duration="00:00:00.0031891" startTime="2025-12-07T13:42:19.7771903+02:00" endTime="2025-12-07T13:42:19.7771904+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9e0537c3-5d34-49ed-a412-0fb4ae9a0f52" />
+    <UnitTestResult executionId="6348f02b-a7a7-4472-98c9-b770d4f4113d" testId="abe84ca4-68ba-8aeb-9ce9-1e52d97e77a8" testName="SmartGearOnline.Tests.UnitTest1.Test1" computerName="DEVASUS" duration="00:00:00.0019204" startTime="2025-12-07T13:42:19.6243784+02:00" endTime="2025-12-07T13:42:19.6244164+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6348f02b-a7a7-4472-98c9-b770d4f4113d" />
+    <UnitTestResult executionId="36fe8e8f-4a80-48da-b839-0dcc8cdf83d6" testId="c124e2e4-3346-593c-76f7-9f279ee8a6a9" testName="SmartGearOnline.Tests.ProductControllerTests.DeleteConfirmed_Failure_ReturnsNotFound" computerName="DEVASUS" duration="00:00:00.0024362" startTime="2025-12-07T13:42:19.7172346+02:00" endTime="2025-12-07T13:42:19.7172348+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="36fe8e8f-4a80-48da-b839-0dcc8cdf83d6" />
+    <UnitTestResult executionId="2fa8e1ac-f62a-496a-93e7-fad6236a05b2" testId="cc1995b2-38a0-34b1-bb60-f856747b6505" testName="SmartGearOnline.Tests.ProductControllerTests.DeleteConfirmed_ServiceThrows_LogsAndReturns500" computerName="DEVASUS" duration="00:00:00.0018300" startTime="2025-12-07T13:42:19.7769243+02:00" endTime="2025-12-07T13:42:19.7769244+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2fa8e1ac-f62a-496a-93e7-fad6236a05b2" />
+    <UnitTestResult executionId="8bd61fff-15c1-4074-9c04-66184ecc2b92" testId="8f8e5db3-6c11-5338-bf5c-127d171c59f0" testName="SmartGearOnline.Tests.ProductControllerTests.Details_NotFound_ReturnsNotFound" computerName="DEVASUS" duration="00:00:00.0030130" startTime="2025-12-07T13:42:19.7045178+02:00" endTime="2025-12-07T13:42:19.7045182+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8bd61fff-15c1-4074-9c04-66184ecc2b92" />
+    <UnitTestResult executionId="fb7c8e42-9426-4862-b79c-c15b7efc2e9b" testId="51e11d3d-8c5a-287a-a2d2-578f7a1fd0f8" testName="SmartGearOnline.Tests.ProductControllerTests.Index_ReturnsView_WithProductList" computerName="DEVASUS" duration="00:00:00.0100995" startTime="2025-12-07T13:42:19.7147269+02:00" endTime="2025-12-07T13:42:19.7147271+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fb7c8e42-9426-4862-b79c-c15b7efc2e9b" />
+    <UnitTestResult executionId="4c9d781c-baa8-4b1c-a4c5-c937daa5fa26" testId="d5cdf6ad-5596-381c-42fe-68c53e1e3c9f" testName="SmartGearOnline.Tests.ProductControllerTests.Edit_Post_UpdateSuccess_Redirects" computerName="DEVASUS" duration="00:00:00.0832859" startTime="2025-12-07T13:42:19.7014252+02:00" endTime="2025-12-07T13:42:19.7014254+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4c9d781c-baa8-4b1c-a4c5-c937daa5fa26" />
+    <UnitTestResult executionId="2970dbe3-4741-43a6-bc01-0b5ab16e6c5e" testId="a63574f4-fd74-99c9-f261-6d2b19d924be" testName="SmartGearOnline.Tests.ProductControllerTests.DeleteConfirmed_Success_RedirectsAndLogs" computerName="DEVASUS" duration="00:00:00.0014587" startTime="2025-12-07T13:42:19.7445849+02:00" endTime="2025-12-07T13:42:19.7445850+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2970dbe3-4741-43a6-bc01-0b5ab16e6c5e" />
+    <UnitTestResult executionId="1f7b0e4b-64fc-4e33-914d-c597ae35b855" testId="33efd9c1-b663-43f0-cd9c-2a0df1d14d28" testName="SmartGearOnline.Tests.ProductControllerTests.Index_ServiceThrows_LogsAndReturns500" computerName="DEVASUS" duration="00:00:00.0034923" startTime="2025-12-07T13:42:19.7208038+02:00" endTime="2025-12-07T13:42:19.7208041+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1f7b0e4b-64fc-4e33-914d-c597ae35b855" />
+    <UnitTestResult executionId="157d8556-c656-4e33-8ad0-bba1155edf32" testId="a8f7473d-0c97-3ccb-a1c6-9f454dddd778" testName="SmartGearOnline.Tests.ProductControllerTests.Create_Post_InvalidModel_ReturnsViewWithoutCallingService" computerName="DEVASUS" duration="00:00:00.0213196" startTime="2025-12-07T13:42:19.7421996+02:00" endTime="2025-12-07T13:42:19.7421998+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="157d8556-c656-4e33-8ad0-bba1155edf32" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="SmartGearOnline.Tests.ProductControllerTests.Edit_Post_UpdateFails_ReturnsNotFound" storage="c:\users\devin\smartgearonline\smartgearonline.tests\bin\debug\net10.0\smartgearonline.tests.dll" id="fc2c1923-9d7d-4130-7d8e-975afe28d2ca">
+      <Execution id="17753e84-1240-45f4-a620-5a8bab527705" />
+      <TestMethod codeBase="C:\Users\devin\SmartGearOnline\SmartGearOnline.Tests\bin\Debug\net10.0\SmartGearOnline.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SmartGearOnline.Tests.ProductControllerTests" name="Edit_Post_UpdateFails_ReturnsNotFound" />
+    </UnitTest>
+    <UnitTest name="SmartGearOnline.Tests.ProductControllerTests.Details_ProductExists_ReturnsView" storage="c:\users\devin\smartgearonline\smartgearonline.tests\bin\debug\net10.0\smartgearonline.tests.dll" id="44c4de37-6414-ae7d-af95-ac09c727c062">
+      <Execution id="5bf9b25a-25ad-48ad-bdae-4d331628f4d2" />
+      <TestMethod codeBase="C:\Users\devin\SmartGearOnline\SmartGearOnline.Tests\bin\Debug\net10.0\SmartGearOnline.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SmartGearOnline.Tests.ProductControllerTests" name="Details_ProductExists_ReturnsView" />
+    </UnitTest>
+    <UnitTest name="SmartGearOnline.Tests.ProductControllerTests.DeleteConfirmed_Failure_ReturnsNotFound" storage="c:\users\devin\smartgearonline\smartgearonline.tests\bin\debug\net10.0\smartgearonline.tests.dll" id="c124e2e4-3346-593c-76f7-9f279ee8a6a9">
+      <Execution id="36fe8e8f-4a80-48da-b839-0dcc8cdf83d6" />
+      <TestMethod codeBase="C:\Users\devin\SmartGearOnline\SmartGearOnline.Tests\bin\Debug\net10.0\SmartGearOnline.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SmartGearOnline.Tests.ProductControllerTests" name="DeleteConfirmed_Failure_ReturnsNotFound" />
+    </UnitTest>
+    <UnitTest name="SmartGearOnline.Tests.ProductControllerTests.Create_Post_InvalidModel_ReturnsViewWithoutCallingService" storage="c:\users\devin\smartgearonline\smartgearonline.tests\bin\debug\net10.0\smartgearonline.tests.dll" id="a8f7473d-0c97-3ccb-a1c6-9f454dddd778">
+      <Execution id="157d8556-c656-4e33-8ad0-bba1155edf32" />
+      <TestMethod codeBase="C:\Users\devin\SmartGearOnline\SmartGearOnline.Tests\bin\Debug\net10.0\SmartGearOnline.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SmartGearOnline.Tests.ProductControllerTests" name="Create_Post_InvalidModel_ReturnsViewWithoutCallingService" />
+    </UnitTest>
+    <UnitTest name="SmartGearOnline.Tests.ProductControllerTests.Index_ReturnsView_WithProductList" storage="c:\users\devin\smartgearonline\smartgearonline.tests\bin\debug\net10.0\smartgearonline.tests.dll" id="51e11d3d-8c5a-287a-a2d2-578f7a1fd0f8">
+      <Execution id="fb7c8e42-9426-4862-b79c-c15b7efc2e9b" />
+      <TestMethod codeBase="C:\Users\devin\SmartGearOnline\SmartGearOnline.Tests\bin\Debug\net10.0\SmartGearOnline.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SmartGearOnline.Tests.ProductControllerTests" name="Index_ReturnsView_WithProductList" />
+    </UnitTest>
+    <UnitTest name="SmartGearOnline.Tests.ProductControllerTests.Edit_Post_UpdateSuccess_Redirects" storage="c:\users\devin\smartgearonline\smartgearonline.tests\bin\debug\net10.0\smartgearonline.tests.dll" id="d5cdf6ad-5596-381c-42fe-68c53e1e3c9f">
+      <Execution id="4c9d781c-baa8-4b1c-a4c5-c937daa5fa26" />
+      <TestMethod codeBase="C:\Users\devin\SmartGearOnline\SmartGearOnline.Tests\bin\Debug\net10.0\SmartGearOnline.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SmartGearOnline.Tests.ProductControllerTests" name="Edit_Post_UpdateSuccess_Redirects" />
+    </UnitTest>
+    <UnitTest name="SmartGearOnline.Tests.ProductControllerTests.DeleteConfirmed_ServiceThrows_LogsAndReturns500" storage="c:\users\devin\smartgearonline\smartgearonline.tests\bin\debug\net10.0\smartgearonline.tests.dll" id="cc1995b2-38a0-34b1-bb60-f856747b6505">
+      <Execution id="2fa8e1ac-f62a-496a-93e7-fad6236a05b2" />
+      <TestMethod codeBase="C:\Users\devin\SmartGearOnline\SmartGearOnline.Tests\bin\Debug\net10.0\SmartGearOnline.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SmartGearOnline.Tests.ProductControllerTests" name="DeleteConfirmed_ServiceThrows_LogsAndReturns500" />
+    </UnitTest>
+    <UnitTest name="SmartGearOnline.Tests.ProductControllerTests.Details_NotFound_ReturnsNotFound" storage="c:\users\devin\smartgearonline\smartgearonline.tests\bin\debug\net10.0\smartgearonline.tests.dll" id="8f8e5db3-6c11-5338-bf5c-127d171c59f0">
+      <Execution id="8bd61fff-15c1-4074-9c04-66184ecc2b92" />
+      <TestMethod codeBase="C:\Users\devin\SmartGearOnline\SmartGearOnline.Tests\bin\Debug\net10.0\SmartGearOnline.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SmartGearOnline.Tests.ProductControllerTests" name="Details_NotFound_ReturnsNotFound" />
+    </UnitTest>
+    <UnitTest name="SmartGearOnline.Tests.ProductControllerTests.Create_Post_ValidProduct_RedirectsToIndex_AndLogs" storage="c:\users\devin\smartgearonline\smartgearonline.tests\bin\debug\net10.0\smartgearonline.tests.dll" id="cf6f4da1-be0a-447f-9674-2307d3e546e6">
+      <Execution id="9e0537c3-5d34-49ed-a412-0fb4ae9a0f52" />
+      <TestMethod codeBase="C:\Users\devin\SmartGearOnline\SmartGearOnline.Tests\bin\Debug\net10.0\SmartGearOnline.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SmartGearOnline.Tests.ProductControllerTests" name="Create_Post_ValidProduct_RedirectsToIndex_AndLogs" />
+    </UnitTest>
+    <UnitTest name="SmartGearOnline.Tests.ProductControllerTests.Index_ServiceThrows_LogsAndReturns500" storage="c:\users\devin\smartgearonline\smartgearonline.tests\bin\debug\net10.0\smartgearonline.tests.dll" id="33efd9c1-b663-43f0-cd9c-2a0df1d14d28">
+      <Execution id="1f7b0e4b-64fc-4e33-914d-c597ae35b855" />
+      <TestMethod codeBase="C:\Users\devin\SmartGearOnline\SmartGearOnline.Tests\bin\Debug\net10.0\SmartGearOnline.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SmartGearOnline.Tests.ProductControllerTests" name="Index_ServiceThrows_LogsAndReturns500" />
+    </UnitTest>
+    <UnitTest name="SmartGearOnline.Tests.ProductControllerTests.DeleteConfirmed_Success_RedirectsAndLogs" storage="c:\users\devin\smartgearonline\smartgearonline.tests\bin\debug\net10.0\smartgearonline.tests.dll" id="a63574f4-fd74-99c9-f261-6d2b19d924be">
+      <Execution id="2970dbe3-4741-43a6-bc01-0b5ab16e6c5e" />
+      <TestMethod codeBase="C:\Users\devin\SmartGearOnline\SmartGearOnline.Tests\bin\Debug\net10.0\SmartGearOnline.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SmartGearOnline.Tests.ProductControllerTests" name="DeleteConfirmed_Success_RedirectsAndLogs" />
+    </UnitTest>
+    <UnitTest name="SmartGearOnline.Tests.UnitTest1.Test1" storage="c:\users\devin\smartgearonline\smartgearonline.tests\bin\debug\net10.0\smartgearonline.tests.dll" id="abe84ca4-68ba-8aeb-9ce9-1e52d97e77a8">
+      <Execution id="6348f02b-a7a7-4472-98c9-b770d4f4113d" />
+      <TestMethod codeBase="C:\Users\devin\SmartGearOnline\SmartGearOnline.Tests\bin\Debug\net10.0\SmartGearOnline.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="SmartGearOnline.Tests.UnitTest1" name="Test1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="fc2c1923-9d7d-4130-7d8e-975afe28d2ca" executionId="17753e84-1240-45f4-a620-5a8bab527705" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="44c4de37-6414-ae7d-af95-ac09c727c062" executionId="5bf9b25a-25ad-48ad-bdae-4d331628f4d2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cf6f4da1-be0a-447f-9674-2307d3e546e6" executionId="9e0537c3-5d34-49ed-a412-0fb4ae9a0f52" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="abe84ca4-68ba-8aeb-9ce9-1e52d97e77a8" executionId="6348f02b-a7a7-4472-98c9-b770d4f4113d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c124e2e4-3346-593c-76f7-9f279ee8a6a9" executionId="36fe8e8f-4a80-48da-b839-0dcc8cdf83d6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cc1995b2-38a0-34b1-bb60-f856747b6505" executionId="2fa8e1ac-f62a-496a-93e7-fad6236a05b2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8f8e5db3-6c11-5338-bf5c-127d171c59f0" executionId="8bd61fff-15c1-4074-9c04-66184ecc2b92" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="51e11d3d-8c5a-287a-a2d2-578f7a1fd0f8" executionId="fb7c8e42-9426-4862-b79c-c15b7efc2e9b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d5cdf6ad-5596-381c-42fe-68c53e1e3c9f" executionId="4c9d781c-baa8-4b1c-a4c5-c937daa5fa26" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a63574f4-fd74-99c9-f261-6d2b19d924be" executionId="2970dbe3-4741-43a6-bc01-0b5ab16e6c5e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="33efd9c1-b663-43f0-cd9c-2a0df1d14d28" executionId="1f7b0e4b-64fc-4e33-914d-c597ae35b855" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a8f7473d-0c97-3ccb-a1c6-9f454dddd778" executionId="157d8556-c656-4e33-8ad0-bba1155edf32" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="12" executed="12" passed="12" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.5+1caef2f33e (64-bit .NET 10.0.0)&#xD;
+[xUnit.net 00:00:00.79]   Discovering: SmartGearOnline.Tests&#xD;
+[xUnit.net 00:00:00.82]   Discovered:  SmartGearOnline.Tests&#xD;
+[xUnit.net 00:00:00.82]   Starting:    SmartGearOnline.Tests&#xD;
+[xUnit.net 00:00:01.02]   Finished:    SmartGearOnline.Tests&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

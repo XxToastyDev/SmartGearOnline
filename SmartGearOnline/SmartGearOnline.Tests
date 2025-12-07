@@ -1,0 +1,49 @@
+public class ProductControllerTests
+{
+    private readonly ProductController _controller;
+    private readonly Mock<ILogger<ProductController>> _loggerMock;
+
+    public ProductControllerTests()
+    {
+        _loggerMock = new Mock<ILogger<ProductController>>();
+        _controller = new ProductController(_loggerMock.Object);
+    }
+
+    [Fact]
+    public void GetProduct_ReturnsProduct_WhenProductExists()
+    {
+        // Arrange
+        var productId = 1;
+        // Setup mock repository to return a product
+
+        // Act
+        var result = _controller.GetProduct(productId);
+
+        // Assert
+        Assert.NotNull(result);
+        // Additional assertions
+    }
+
+    [Fact]
+    public void GetProduct_LogsError_WhenProductDoesNotExist()
+    {
+        // Arrange
+        var productId = 999; // Non-existing product ID
+        // Setup mock repository to return null
+
+        // Act
+        var result = _controller.GetProduct(productId);
+
+        // Assert
+        _loggerMock.Verify(logger => logger.LogError(It.IsAny<string>(), It.IsAny<object[]>()), Times.Once);
+    }
+}
+
+public class HelloWorldTests
+{
+    [Fact]
+    public void HelloWorld_ReturnsHelloWorld()
+    {
+        Assert.Equal("Hello, World!", "Hello, World!");
+    }
+}

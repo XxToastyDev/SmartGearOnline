@@ -1,0 +1,60 @@
+/* ========== GLOBAL PAGE STYLING ========== */
+body {
+    background-color: #f7f7f7;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+/* ========== NAVBAR ========== */
+.navbar-brand {
+    font-size: 1.4rem;
+}
+
+.nav-link {
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+/* ========== BUTTON STYLING ========== */
+.btn-primary,
+.btn-success,
+.btn-danger,
+.btn-warning {
+    border-radius: 8px !important;
+    padding: 8px 16px !important;
+}
+
+.btn-primary {
+    background-color: #0069d9;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0053ad;
+}
+
+/* ========== FOOTER ========== */
+.footer {
+    font-size: 0.9rem;
+}
+
+.footer h6 {
+    font-weight: bold;
+}
+
+/* ========== RECENT PRODUCTS VIEW COMPONENT ========== */
+.recent-products {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.recent-product-item {
+    background: #222;
+    padding: 6px 10px;
+    border-radius: 6px;
+    color: #eee;
+}

@@ -1,0 +1,86 @@
+public class ProductController : Controller
+{
+    private readonly ILogger<ProductController> _logger;
+
+    public ProductController(ILogger<ProductController> logger)
+    {
+        _logger = logger;
+    }
+
+    public IActionResult GetProduct(int id)
+    {
+        try
+        {
+            // Logic to get product
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "An error occurred while getting the product with id {Id}", id);
+            return StatusCode(500, "Internal server error");
+        }
+    }
+
+    // Other methods with similar try-catch structure
+}
+
+using Xunit;
+using Moq;
+using Microsoft.Extensions.Logging;
+
+public class ProductControllerTests
+{
+    [Fact]
+    public void GetProduct_ValidId_ReturnsProduct()
+    {
+        // Arrange
+        var loggerMock = new Mock<ILogger<ProductController>>();
+        var controller = new ProductController(loggerMock.Object);
+        
+        // Act
+        var result = controller.GetProduct(1);
+        
+        // Assert
+        Assert.NotNull(result);
+        // Additional assertions
+    }
+
+    [Fact]
+    public void GetProduct_InvalidId_LogsError()
+    {
+        // Arrange
+        var loggerMock = new Mock<ILogger<ProductController>>();
+        var controller = new ProductController(loggerMock.Object);
+        
+        // Act
+        var result = controller.GetProduct(-1);
+        
+        // Assert
+        loggerMock.Verify(x => x.LogError(It.IsAny<Exception>(), It.IsAny<string>(), It.IsAny<object[]>()), Times.Once);
+    }
+}
+
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3" />
+    <PackageReference Include="Moq" Version="4.16.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
+  </ItemGroup>
+
+</Project>
+
+using Xunit;
+
+public class HelloWorldTests
+{
+    [Fact]
+    public void HelloWorld_ReturnsHelloWorld()
+    {
+        Assert.Equal("Hello, World!", "Hello, World!");
+    }
+}

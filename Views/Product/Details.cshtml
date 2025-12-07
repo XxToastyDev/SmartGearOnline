@@ -1,0 +1,13 @@
+@model SmartGearOnline.Models.Product
+
+<h2 class="mb-4">Product Details</h2>
+
+<div class="card p-4 shadow-sm">
+    <p><strong>Name:</strong> @Model.Name</p>
+    <p><strong>Description:</strong> @Model.Description</p>
+    <p><strong>Price:</strong> R @Model.FinalPrice</p>
+</div>
+
+<a asp-controller="Product" asp-action="Index" asp-route-user="admin" class="btn btn-primary mt-3">
+    Back to List
+</a>

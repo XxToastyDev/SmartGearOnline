@@ -1,0 +1,27 @@
+@model IEnumerable<SmartGearOnline.Models.Product>
+<h2>Products</h2>
+
+<div id="product-list">
+    @await Html.PartialAsync("_ProductList", Model)
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
+<script>
+    const conn = new signalR.HubConnectionBuilder().withUrl("/productHub").build();
+
+    conn.on("ProductChanged", async (action, productId) => {
+        console.log("ProductChanged:", action, productId);
+        // fetch the partial and replace the HTML
+        try {
+            const res = await fetch('@Url.Action("ListPartial", "Product")', { headers: { 'X-Requested-With': 'XMLHttpRequest' } });
+            if (res.ok) {
+                const html = await res.text();
+                document.getElementById("product-list").innerHTML = html;
+            }
+        } catch (e) {
+            console.error("Error refreshing product list", e);
+        }
+    });
+
+    conn.start().catch(err => console.error(err));
+</script>

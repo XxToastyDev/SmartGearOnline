@@ -1,0 +1,34 @@
+@model RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+}
+<form asp-action="Register" method="post" novalidate>
+    @Html.AntiForgeryToken()
+
+    <!-- Email -->
+    <div>
+        <label asp-for="Email">Email</label>
+        <input asp-for="Email" placeholder="you@example.com" />
+        <span asp-validation-for="Email"></span>
+    </div>
+
+    <!-- Password -->
+    <div>
+        <label asp-for="Password">Password</label>
+        <input asp-for="Password" type="password" placeholder="At least 6 characters" />
+        <span asp-validation-for="Password"></span>
+    </div>
+
+    <!-- Confirm Password -->
+    <div>
+        <label asp-for="ConfirmPassword">Confirm password</label>
+        <input asp-for="ConfirmPassword" type="password" placeholder="Re-type your password" />
+        <span asp-validation-for="ConfirmPassword"></span>
+    </div>
+
+    <button type="submit">Register</button>
+</form>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

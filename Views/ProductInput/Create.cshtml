@@ -1,0 +1,49 @@
+@model SmartGearOnline.Models.Product
+
+@{
+    ViewData["Title"] = "Create Product";
+}
+
+<h2>Create Product</h2>
+
+<form asp-action="Create" method="post" asp-route-user="admin" class="mt-4">
+
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mt-3">
+        <label asp-for="Description"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mt-3">
+        <label asp-for="BasePrice"></label>
+        <input asp-for="BasePrice" class="form-control" />
+        <span asp-validation-for="BasePrice" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mt-3">
+        <label asp-for="MarkupPercentage">Markup (%)</label>
+        <input asp-for="MarkupPercentage" class="form-control" />
+        <span asp-validation-for="MarkupPercentage" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mt-3">
+        <label asp-for="CategoryId">Category</label>
+        <select asp-for="CategoryId" class="form-control"
+                asp-items="@(new SelectList(ViewBag.Categories, "Id", "Name"))">
+            <option value="">Select category...</option>
+        </select>
+        <span asp-validation-for="CategoryId" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-4">Submit</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

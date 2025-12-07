@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Products API Test</title>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="/js/site.api.js"></script>
+  <style>body{font-family:Segoe UI,Arial;margin:16px} input,button{margin:4px}</style>
+</head>
+<body>
+  <h2>Products API Test</h2>
+
+  <div>
+    <h3>Create product</h3>
+    <input id="p-name" placeholder="Name" />
+    <input id="p-desc" placeholder="Description" />
+    <input id="p-price" placeholder="BasePrice" />
+    <input id="p-markup" placeholder="MarkupPercentage" />
+    <input id="p-category" placeholder="CategoryId" />
+    <button id="btn-create">Create</button>
+  </div>
+
+  <div>
+    <h3>Products</h3>
+    <ul id="api-products"></ul>
+  </div>
+</body>
+</html>

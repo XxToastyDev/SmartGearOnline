@@ -1,0 +1,9 @@
+﻿bin/
+obj/
+.vs/
+*.user
+*.suo
+*.db
+*.DS_Store
+*.env
+Evidence/supabase_connection.txt

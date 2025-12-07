@@ -1,0 +1,46 @@
+@model SmartGearOnline.Models.Product
+
+<h2 class="mb-4">Edit Product</h2>
+
+<form method="post" class="card p-4 shadow-sm">
+    <input type="hidden" name="user" value="admin" />
+
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Description" class="form-label"></label>
+        <input asp-for="Description" class="form-control" />
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="BasePrice" class="form-label"></label>
+        <input asp-for="BasePrice" class="form-control" />
+        <span asp-validation-for="BasePrice" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="MarkupPercentage" class="form-label"></label>
+        <input asp-for="MarkupPercentage" class="form-control" />
+        <span asp-validation-for="MarkupPercentage" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="CategoryId" class="form-label">Category</label>
+        <select asp-for="CategoryId"
+                class="form-control"
+                asp-items="@(new SelectList(ViewBag.Categories, "Id", "Name"))"></select>
+        <span asp-validation-for="CategoryId" class="text-danger"></span>
+    </div>
+
+    <button class="btn btn-success">Save Changes</button>
+    <a asp-controller="Product" asp-action="Index" asp-route-user="admin" class="btn btn-secondary ms-2">Cancel</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

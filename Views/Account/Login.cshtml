@@ -1,0 +1,8 @@
+@model LoginViewModel
+<form asp-action="Login" method="post">
+    @Html.AntiForgeryToken()
+    <input asp-for="Email" />
+    <input asp-for="Password" type="password" />
+    <input asp-for="RememberMe" type="checkbox" />
+    <button type="submit">Login</button>
+</form>

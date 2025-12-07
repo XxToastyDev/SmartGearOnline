@@ -1,0 +1,11 @@
+@model List<SmartGearOnline.Models.Product>
+
+<div class="recent-products">
+    @foreach (var product in Model)
+    {
+        <div class="recent-product-item">
+            <strong>@product.Name</strong>
+            <span class="text-warning">£@product.FinalPrice</span>
+        </div>
+    }
+</div>

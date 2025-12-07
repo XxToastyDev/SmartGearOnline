@@ -1,0 +1,17 @@
+@model SmartGearOnline.Models.Product
+
+<h2 class="mb-4 text-danger">Delete Product</h2>
+
+<div class="alert alert-warning p-4">
+    <h4>Are you sure you want to delete:</h4>
+    <p class="fs-5"><strong>@Model.Name</strong></p>
+</div>
+
+<form method="post">
+    <input type="hidden" name="user" value="admin" />
+
+    <button type="submit" class="btn btn-danger">Yes, Delete</button>
+    <a asp-controller="Product" asp-action="Index" asp-route-user="admin" class="btn btn-secondary ms-2">
+        Cancel
+    </a>
+</form>

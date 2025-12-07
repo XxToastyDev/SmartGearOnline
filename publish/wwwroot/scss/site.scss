@@ -1,0 +1,54 @@
+// site.scss
+
+// Variables
+$primary-color: #ffc107; // Bootstrap warning color
+$secondary-color: #343a40; // dark background
+
+// Body styling
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+// Header / Navbar
+.navbar {
+  background-color: $secondary-color;
+
+  .navbar-brand {
+    color: $primary-color !important;
+  }
+
+  .nav-link {
+    color: white !important;
+    &:hover {
+      color: $primary-color !important;
+    }
+  }
+}
+
+// Footer styling
+.footer {
+  background-color: $secondary-color;
+  color: white;
+
+  h6 {
+    color: $primary-color;
+  }
+}
+
+// Buttons
+.btn-primary {
+  background-color: $primary-color;
+  border-color: $primary-color;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+    border-color: darken($primary-color, 10%);
+  }
+}
+
+.btn-danger {
+  &:hover {
+    background-color: darken(red, 10%);
+  }
+}

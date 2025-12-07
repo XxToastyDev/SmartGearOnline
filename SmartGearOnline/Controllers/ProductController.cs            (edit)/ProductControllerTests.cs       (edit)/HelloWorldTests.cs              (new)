@@ -1,0 +1,75 @@
+public class ProductController
+{
+    private readonly ILogger<ProductController> _logger;
+
+    public ProductController(ILogger<ProductController> logger)
+    {
+        _logger = logger;
+    }
+
+    public IActionResult GetProduct(int id)
+    {
+        try
+        {
+            // Logic to get product
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "An error occurred while getting the product with id {Id}", id);
+            return StatusCode(500, "Internal server error");
+        }
+    }
+}
+
+using Xunit;
+using Moq;
+using Microsoft.Extensions.Logging;
+
+public class ProductControllerTests
+{
+    private readonly Mock<ILogger<ProductController>> _loggerMock;
+    private readonly ProductController _controller;
+
+    public ProductControllerTests()
+    {
+        _loggerMock = new Mock<ILogger<ProductController>>();
+        _controller = new ProductController(_loggerMock.Object);
+    }
+
+    [Fact]
+    public void GetProduct_ReturnsOkResult_WhenProductExists()
+    {
+        // Arrange
+        int productId = 1;
+
+        // Act
+        var result = _controller.GetProduct(productId);
+
+        // Assert
+        Assert.IsType<OkResult>(result);
+    }
+
+    [Fact]
+    public void GetProduct_LogsError_WhenExceptionOccurs()
+    {
+        // Arrange
+        int productId = -1; // Simulate an error
+
+        // Act
+        var result = _controller.GetProduct(productId);
+
+        // Assert
+        _loggerMock.Verify(logger => logger.LogError(It.IsAny<Exception>(), It.IsAny<string>(), productId), Times.Once);
+    }
+}
+
+using Xunit;
+
+public class HelloWorldTests
+{
+    [Fact]
+    public void HelloWorld_ReturnsHelloWorld()
+    {
+        Assert.Equal("Hello, World!", "Hello, World!");
+    }
+}

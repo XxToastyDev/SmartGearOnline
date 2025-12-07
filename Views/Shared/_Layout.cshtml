@@ -1,0 +1,80 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartGear Online - @ViewData["Title"]</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Compiled SASS CSS -->
+    <link rel="stylesheet" href="~/css/site.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold text-warning" asp-controller="Home" asp-action="Index">
+                    SmartGear Online
+                </a>
+
+                <button class="navbar-toggler" type="button" 
+                        data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Product" asp-action="Index" asp-route-user="admin">
+                                Products
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Product" asp-action="Create" asp-route-user="admin">
+                                Add Product
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="ProductInput" asp-action="Create">
+                                Quick Input Form
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container py-4">
+        @RenderBody()
+    </main>
+
+    <footer class="footer bg-dark text-light text-center py-3 mt-5">
+        <p class="mb-0">&copy; 2025 SmartGear Online</p>
+
+        <div class="mt-3">
+            <h6 class="text-warning">Recent Products</h6>
+            <vc:recent-products></vc:recent-products>
+        </div>
+    </footer>
+
+    <!-- JS scripts -->
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.bundle.js"></script>
+
+    <!-- Render view-specific Scripts sections safely -->
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
